@@ -1,0 +1,56 @@
+\documentclass[USenglish,twocolumn]{article}
+
+\usepackage[utf8]{inputenc}%(only for the pdftex engine)
+%\RequirePackage[no-math]{fontspec}%(only for the luatex or the xetex engine)
+\usepackage[big]{dgruyter}
+  
+\begin{document}
+
+\articletype{Research Article{\hfill}Open Access}
+
+\author*[1]{Kevin Gamez}
+\author[2]{Haydemar Nuñez}
+\author[3]{Andrés Calderón}
+\author[4]{Rocío Sierra}
+
+\affil[1]{Universidad de los Andes, E-mail: ks.gamez@uniandes.edu.co}
+\affil[2]{Universidad de los Andes, E-mail: h.nunez@uniandes.edu.co}
+\affil[3]{University of California, Riverside, E-mail:acald013@ucr.edu}
+\affil[4]{Universidad de los Andes, E-mail: h.rsierra@uniandes.edu.co}
+
+\title{Clasificación de Plantaciones de Palma de Aceite en Colombia utilizando Deep Learning y Datos Satelitales de Sentinel-1 y Sentinel-2}
+
+\runningtitle{Oil palm classification}
+
+\begin{abstract}{
+    Esta tesis aborda el desafío de optimizar la agricultura utilizando técnicas de Deep Learning para la clasificación de cultivos en imágenes satelitales de Sentinel 1 y Sentinel 2, enfocándose en la región de Colombia. Frente a la creciente demanda de alimentos y el cambio climático, se desarrolla un modelo avanzado para mejorar la gestión de recursos agrícolas y la productividad. El estudio comienza con un análisis exhaustivo del estado del arte en la identificación de zonas cultivadas mediante Deep Learning, destacando la necesidad de optimizar el uso de recursos como agua y fertilizantes. Se implementa un modelo basado en la arquitectura DeepLab V3+ con ajustes en MobileNet V3 y ResNet50, para clasificar cultivos de palma de aceite en Colombia. Se emplean estrategias como transferencia de aprendizaje y ajuste fino, utilizando modelos pre entrenados para acelerar el entrenamiento. El diseño metodológico se divide en tres fases: modelado, implementación y validación. Se evalúan métricas de desempeño y se analizan limitaciones, especialmente en la detección de áreas recién despejadas y plantaciones jóvenes. Los resultados muestran una alta precisión del modelo en la clasificación de cultivos de palma de aceite, destacando su eficacia y potencial para aplicaciones prácticas en la gestión agrícola. Se concluye la superioridad del Deep Learning sobre métodos tradicionales, sugiriendo futuras mejoras y ampliación del estudio a otros cultivos y condiciones geográficas.
+}
+\end{abstract}
+
+\keywords{Deep Learning, imágenes satelitales, clasificación de cultivos, agricultura, Sentinel}
+\journalname{Open Computer Science}
+
+\DOI{DOI}
+\startpage{1}
+\received{..}
+\revised{..}
+\accepted{..}
+
+\journalyear{2025}
+\journalvolume{1}
+\journalissue{11}
+
+\maketitle
+
+\input{introduction}
+\input{literature}
+\input{preliminaries}
+\input{methods}
+\input{results}
+\input{conclusions}
+
+\bibliographystyle{plain}
+\bibliography{main}
+
+\end{document}
+ 

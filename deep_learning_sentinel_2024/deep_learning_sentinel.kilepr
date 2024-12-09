@@ -77,3 +77,9 @@ archive=true
 encoding=UTF-8
 highlight=LaTeX
 mode=LaTeX
+
+[item:template.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
