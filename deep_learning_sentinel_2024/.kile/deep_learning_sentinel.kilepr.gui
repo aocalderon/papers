@@ -217,8 +217,8 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=55
-CursorLine=32
+CursorColumn=27
+CursorLine=38
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
