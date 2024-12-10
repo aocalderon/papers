@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=template.tex
+lastDocument=main.tex
 
 [document-settings,item:abstract.tex]
 Bookmarks=
@@ -122,7 +122,7 @@ Mode=LaTeX
 Mode Set By User=false
 
 [item:abstract.tex]
-open=true
+open=false
 order=2
 
 [item:conclusions.tex]
@@ -138,7 +138,7 @@ open=false
 order=-1
 
 [item:introduction.tex]
-open=true
+open=false
 order=3
 
 [item:literature.tex]
@@ -170,11 +170,11 @@ open=false
 order=-1
 
 [item:template.tex]
-open=true
+open=false
 order=1
 
 [view-settings,view=0,item:abstract.tex]
-CursorColumn=0
+CursorColumn=114
 CursorLine=5
 Dynamic Word Wrap=true
 JumpList=
@@ -182,8 +182,8 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:conclusions.tex]
-CursorColumn=337
-CursorLine=1
+CursorColumn=0
+CursorLine=8
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
@@ -207,15 +207,15 @@ ViMarks=
 
 [view-settings,view=0,item:introduction.tex]
 CursorColumn=0
-CursorLine=0
+CursorLine=9
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:literature.tex]
-CursorColumn=246
-CursorLine=16
+CursorColumn=242
+CursorLine=63
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
@@ -223,7 +223,7 @@ ViMarks=
 
 [view-settings,view=0,item:main.bib]
 CursorColumn=0
-CursorLine=39
+CursorLine=213
 Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
@@ -262,9 +262,9 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:results.tex]
-CursorColumn=0
-CursorLine=9
-Dynamic Word Wrap=false
+CursorColumn=731
+CursorLine=1
+Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
 ViMarks=

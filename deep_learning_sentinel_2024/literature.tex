@@ -1,39 +1,39 @@
 \section{Revisión de la literatura}
 
-El uso de técnicas de Deep Learning en el análisis de imágenes satelitales ha revolucionado la agricultura, transformándola en una herramienta clave para la gestión y planificación agrícola al mejorar la precisión en la predicción del rendimiento de cultivos y biomasa. Estas tecnologías facilitan decisiones basadas en datos y optimizan recursos.
+El uso de técnicas de Deep Learning en el análisis de imágenes satelitales ha revolucionado la agricultura, convirtiéndola en una herramienta clave para la gestión y planificación agrícola. Estas tecnologías han mejorado significativamente la precisión en la predicción del rendimiento de cultivos y biomasa, facilitando decisiones basadas en datos y optimizando recursos.
 
-Un análisis exhaustivo de 150 estudios \cite{victor2022} identificó cinco tareas principales: uso y cobertura del suelo, salud del suelo, fisiología de las plantas, daño a los cultivos y predicción del rendimiento. Se concluye que los métodos de Deep Learning superan a los tradicionales en la mayoría de las tareas, excepto en la predicción del rendimiento con LSTM frente a Random Forest, subrayando la importancia de conjuntos de datos de referencia públicos para una comparación efectiva entre estudios.
-
+Un análisis exhaustivo de 150 estudios \cite{victor2022} identificó cinco tareas principales donde la aplicación de Deep Learning podría traer beneficios: uso y cobertura del suelo, salud del suelo, fisiología de las plantas, daño a los cultivos y predicción del rendimiento. El estudio concluye que los métodos de Deep Learning superan a los tradicionales en la mayoría de las tareas, salvo en la predicción del rendimiento, donde los modelos LSTM muestran un rendimiento comparable a Random Forest. Este hallazgo subraya la importancia de disponer de conjuntos de datos de referencia públicos para una comparación efectiva entre estudios.
 
 \subsection{Optimización de la Agricultura con Deep Learning}
+El Deep Learning ha emergido como una herramienta clave para optimizar prácticas agrícolas mediante el análisis avanzado de datos satelitales. Su capacidad para procesar grandes volúmenes de información y abordar problemas complejos ha permitido mejorar la precisión en la estimación de rendimientos, superar limitaciones tradicionales y adaptarse a diversas condiciones geográficas. A continuación, se destacan ejemplos representativos que ilustran cómo estas técnicas están transformando la agricultura.
 
-La estimación del rendimiento del café en Brasil mediante Deep Learning, combinado con modelos de regresión y análisis de imágenes satelitales, ha demostrado ser eficaz para anticipar variabilidad espacial en mapas de rendimiento, apoyando la planificación agrícola \cite{martello2022}. Además, la escalabilidad del Deep Learning se destacó en un estudio que utilizó datos geográficos y meteorológicos para estimar rendimientos de cinco cultivos principales en Brasil, mostrando su adaptabilidad a diversas condiciones agrícolas \cite{cunha2020}.
+Por ejemplo, la estimación del rendimiento del café en Brasil mediante Deep Learning, combinado con modelos de regresión y análisis de imágenes satelitales, ha demostrado ser eficaz para anticipar la variabilidad espacial en mapas de rendimiento, apoyando la planificación agrícola \cite{martello2022}. Además, la escalabilidad del Deep Learning destacó en un estudio que utilizó datos geográficos y meteorológicos para estimar rendimientos de cinco cultivos principales en Brasil, mostrando su adaptabilidad a diversas condiciones agrícolas \cite{cunha2020}.
 
-Aunque las imágenes satelitales suelen tener resoluciones espaciales limitadas, su resolución espectral superior permite aprovechar algoritmos per-píxel, mejorando el rendimiento en comparación con enfoques tradicionales \cite{victor2022}. Métodos como el uso de redes neuronales convolucionales (CNNs) en datos temporales y secuenciales han abordado desafíos como la cobertura de nubes. Imágenes SAR de satélites como Sentinel-1 han mostrado mejores resultados al penetrar nubes en comparación con imágenes ópticas.
+Aunque las imágenes satelitales suelen tener limitaciones en su resolución espacial, su resolución espectral superior permite el uso de algoritmos \textit{per-píxel}, mejorando el rendimiento en comparación con enfoques tradicionales \cite{victor2022}.  Métodos como las redes neuronales convolucionales (CNNs), aplicados a datos temporales y secuenciales, han abordado desafíos como la cobertura de nubes. En este contexto, las imágenes SAR de satélites como Sentinel-1 han mostrado mejores resultados al penetrar nubes en comparación con imágenes ópticas.
 
-Para estudios del uso del suelo, la combinación de datos de Sentinel-1, Sentinel-2 y Landsat-8 ha demostrado mejorar significativamente el rendimiento en comparación con el uso de una sola fuente.
+Para estudios sobre el uso del suelo, la combinación de datos de Sentinel-1, Sentinel-2 y Landsat-8 ha demostrado mejorar significativamente el rendimiento en comparación con el uso de una sola fuente.
 
 \subsection{Casos de Estudio en Agricultura con Deep Learning}
-A continuación presentamos una serie de artículos que exploran diferentes casos de estudio con técnicas de Deep Learning para clasificar diversos tipos de cultivos.  La Tabla \ref{tab:case_studies} resume los principales hallazgos para cada caso.
+
+A continuación, se presentan diversos casos de estudio que aplican técnicas de Deep Learning para clasificar diferentes tipos de cultivos. La Tabla \ref{tab:case_studies} resume los principales hallazgos de cada caso.
 
 \begin{itemize}
 
-    \item \textit{Coffee-Yield Estimation Using High-Resolution Time-Series Satellite Images and Machine Learning:} En este estudio \cite{martello2022}, se utilizó aprendizaje automático y datos de imágenes de alta resolución (PlanetScope) para predecir el rendimiento del café en Minas Gerais, Brasil. Se implementaron modelos Random Forest y regresión lineal múltiple, logrando un coeficiente de determinación ($R^2$) de 0.93 para la validación, destacando la precisión en el monitoreo de variabilidad espacial.
+    \item \textit{Coffee-Yield Estimation Using High-Resolution Time-Series Satellite Images and Machine Learning:} En este estudio \cite{martello2022}, se utilizó aprendizaje automático y datos de imágenes de alta resolución (PlanetScope) para predecir el rendimiento del café en Minas Gerais, Brasil. Se implementaron modelos Random Forest y regresión lineal múltiple, logrando un coeficiente de determinación ($R^2$) de 0.93 para la validación, destacando la precisión en el monitoreo de la variabilidad espacial.
 
-    \item \textit{Corn Biomass Estimation by Integrating Remote Sensing and Long-Term Observation Data Based on Machine Learning Techniques:} \cite{geng2021} estimaron la biomasa del maíz en la cuenca del río Heihe, China, utilizando datos MODIS y modelos como Random Forest, SVM, y XGBoost. El modelo XGBoost tuvo el mejor rendimiento ($R^2 = 0.78$, RMSE = 2.86 t/ha).
+    \item \textit{Corn Biomass Estimation by Integrating Remote Sensing and Long-Term Observation Data Based on Machine Learning Techniques:} En \cite{geng2021} se estimó la biomasa del maíz en la cuenca del río Heihe, China, utilizando datos MODIS y modelos como Random Forest, SVM y XGBoost. El modelo XGBoost obtuvo el mejor rendimiento ($R^2 = 0.78$, RMSE = 2.86 t/ha).
 
-    \item \textit{Estimating Crop Yields with Remote Sensing and Deep Learning:} \cite{cunha2020} propusieron un modelo basado en Deep Learning para predecir rendimientos de cultivos en Brasil. Este modelo usó coordenadas geográficas, datos meteorológicos y del suelo, mostrando alta escalabilidad con datos limitados.
+    \item \textit{Estimating Crop Yields with Remote Sensing and Deep Learning:} \cite{cunha2020} propusieron un modelo basado en Deep Learning para predecir rendimientos de cultivos en Brasil. Este modelo utilizó coordenadas geográficas, datos meteorológicos y del suelo, mostrando alta escalabilidad con datos limitados.
 
-    \item \textit{Forecasting Crop Yield with Deep Learning-Based Ensemble Model:} \cite{divakar2022} emplearon un modelo basado en LSTM y ConvLSTM para predecir el rendimiento de cultivos en Estados Unidos e India. Con un coeficiente $R^2$ de 0.73 para la soja y 0.49 para el arroz, destacaron la eficiencia con menos parámetros.
+    \item \textit{Forecasting Crop Yield with Deep Learning-Based Ensemble Model:} \cite{divakar2022} emplearon un modelo basado en LSTM y ConvLSTM para predecir el rendimiento de cultivos en Estados Unidos e India. Con un coeficiente $R^2$ de 0.73 para la soja y 0.49 para el arroz, destacaron la eficiencia del modelo con menos parámetros.
 
-    \item \textit{Forecasting Sunflower Grain Yield Using Remote Sensing Data:} \cite{debaeke2023} utilizaron datos de teledetección en Francia para predecir el rendimiento del girasol, combinando GAI y GAD en modelos como Random Forest y regresiones polinómicas, logrando mejorar las predicciones a nivel de campo.
+    \item \textit{Forecasting Sunflower Grain Yield Using Remote Sensing Data:} \cite{debaeke2023} utilizaron datos de teledetección en Francia para predecir el rendimiento del girasol, combinando índices de vegetación como GAI\footnote{Green Area Index} y GAD\footnote{Growth Accumulation Dynamics} en modelos como Random Forest y regresiones polinómicas, logrando mejorar las predicciones a nivel de campo.
 
-    \item \textit{High-Resolution Global Map of Smallholder and Industrial Closed-Canopy Oil Palm Plantations:} \cite{descals2021} mapearon plantaciones de palma aceitera usando DeepLabv3+ con imágenes Sentinel-1 y Sentinel-2, obteniendo una precisión del 98.52\%.
+    \item \textit{High-Resolution Global Map of Smallholder and Industrial Closed-Canopy Oil Palm Plantations:} \cite{descals2021} mapearon plantaciones de palma aceitera usando modelos avanzados de aprendizaje profundo diseñados para segmentación semántica aplicado a imágenes Sentinel, obteniendo una precisión superior 98\%.
 
-    \item \textit{A Systematic Review of the Use of Deep Learning in Satellite Imagery for Agriculture:} \cite{victor2022} revisaron 150 estudios de Deep Learning aplicados a imágenes satelitales, identificando tareas clave como clasificación del uso del suelo, fisiología de plantas y predicción de rendimientos.
+    \item \textit{A Systematic Review of the Use of Deep Learning in Satellite Imagery for Agriculture:} Se destaca \cite{victor2022} donde se revisaron 150 estudios de Deep Learning aplicados a imágenes satelitales, identificando tareas clave como clasificación del uso del suelo, fisiología de plantas y predicción de rendimientos.
 
 \end{itemize}
-
 
 \begin{table*}[t]
         \centering
@@ -53,16 +53,16 @@ A continuación presentamos una serie de artículos que exploran diferentes caso
         \end{tabular}
 \end{table*}
 
-
 \subsection{Tendencias Futuras y Potencial del Deep Learning en Agricultura}
 
 El Deep Learning ha transformado significativamente la agricultura, mejorando la precisión en la estimación de rendimientos y biomasa de cultivos como café, maíz y palma de aceite. La integración de algoritmos avanzados, como CNN y RNN, con datos de teledetección ha facilitado predicciones oportunas y eficientes para la gestión de recursos agrícolas.
 
 El uso de imágenes satelitales se ha consolidado como una herramienta clave, permitiendo monitorear la salud del suelo, la fisiología de las plantas y evaluar daños en cultivos mediante índices espectrales. La comunidad científica destaca la necesidad de benchmarks públicos y métodos estandarizados para validar modelos y comparar resultados.
 
-Para abordar desafíos como la baja resolución espacial y las interferencias atmosféricas, se desarrollan técnicas que maximizan el uso de datos disponibles. Las innovaciones en Deep Learning prometen aplicaciones prácticas como detección temprana de enfermedades, optimización del uso de agua y gestión de nutrientes, contribuyendo a la sostenibilidad agrícola.
+Para superar desafíos como la baja resolución espacial y las interferencias atmosféricas, se están desarrollando técnicas que maximizan el uso de los datos disponibles. Las innovaciones en Deep Learning prometen aplicaciones prácticas como la detección temprana de enfermedades, la optimización del uso del agua y la gestión de nutrientes, contribuyendo así a la sostenibilidad agrícola \cite{sepulveda2020}.
 
-La colaboración interdisciplinaria entre agrónomos, científicos de datos y especialistas en teledetección es esencial para desarrollar soluciones integradas que impulsen la innovación en este campo en evolución.
+La colaboración interdisciplinaria entre agrónomos, científicos de datos y especialistas en teledetección es esencial para desarrollar soluciones integradas que impulsen la innovación en este campo en constante evolución \cite{nasa_arset_2023}.
 
 \subsection{Ventajas y Desafíos}
-El uso combinado de imágenes de Sentinel-1 (radar SAR) y Sentinel-2 (multiespectrales) mejora la clasificación de cultivos, superando limitaciones como la cobertura de nubes. Sin embargo, persisten desafíos relacionados con la resolución espacial y la necesidad de benchmarks públicos para facilitar la comparación entre estudios.
+
+El uso combinado de imágenes de Sentinel-1 (radar SAR) y Sentinel-2 (multi-espectrales) mejora significativamente la clasificación de cultivos, superando limitaciones como la cobertura de nubes. Sin embargo, persisten desafíos relacionados con la resolución espacial y la necesidad de benchmarks públicos que faciliten la comparación entre estudios.
