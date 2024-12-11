@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=literature.tex
+lastDocument=main.tex
 
 [document-settings,item:abstract.tex]
 Bookmarks=
@@ -142,11 +142,11 @@ open=false
 order=3
 
 [item:literature.tex]
-open=true
+open=false
 order=2
 
 [item:main.bib]
-open=true
+open=false
 order=1
 
 [item:main.tex]
@@ -230,24 +230,24 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=0
-CursorLine=19
+CursorColumn=15
+CursorLine=52
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:methods.tex]
-CursorColumn=0
-CursorLine=0
-Dynamic Word Wrap=false
+CursorColumn=185
+CursorLine=26
+Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:preliminaries.tex]
-CursorColumn=757
-CursorLine=3
+CursorColumn=427
+CursorLine=72
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
@@ -262,8 +262,8 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:results.tex]
-CursorColumn=731
-CursorLine=1
+CursorColumn=728
+CursorLine=71
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
